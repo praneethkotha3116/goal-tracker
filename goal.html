@@ -1,0 +1,68 @@
+<!-- ✅ Final goals.html with Category Support -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Goals</title>
+  <link rel="stylesheet" href="goal_style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <div class="main2">
+    <div class="mtop">
+      <div class="tl">
+        <h1 class="heading">Goals</h1>
+      </div>
+      <div class="tr">
+        <a href="home.html" class="nav-link">Home</a>
+        <a href="goal.html"  class="nav-link">Goal</a>
+        <a href="progress.html" class="nav-link">Progress</a>
+        <a href="profile.html" class="nav-link">Profile</a>
+      </div>
+    </div>
+
+    <div class="mbottom">
+      <!-- Left Add Goal -->
+      <div class="bl">
+        <div class="ltop">
+          <p class="section-title">Add New Goal</p>
+        </div>
+        <hr />
+        <div class="lbottom">
+          <input type="text" placeholder="Goal Title" class="goal-input" />
+          <input type="text" placeholder="Description" class="goal-input" />
+          <input type="date" class="goal-input" />
+          <input type="time" class="goal-input" />
+          <select id="goal-category" class="goal-input">
+            <option value="General">General</option>
+            <option value="Technical">Technical</option>
+            <option value="Soft Skills">Soft Skills</option>
+            <option value="Interview Prep">Interview Prep</option>
+          </select>
+          <button class="add-btn">Add Goal</button>
+        </div>
+      </div>
+
+      <!-- Center All Goals -->
+      <div class="bm">
+        <div class="middle_top">
+          <p class="section-title">All Goals</p>
+        </div>
+        <hr />
+        <div class="middle_bottom" id="all-goals"></div>
+      </div>
+
+      <!-- Right Current Goals -->
+      <div class="br">
+        <div class="right_top">
+          <p class="section-title">Current Goals</p>
+        </div>
+        <hr />
+        <div class="right_bottom" id="current-goals"></div>
+      </div>
+    </div>
+  </div>
+  <script src="goal.js"></script>
+</body>
+</html>

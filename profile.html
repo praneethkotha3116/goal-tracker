@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Profile Page</title>
+  <link rel="stylesheet" href="profile_style.css">
+</head>
+<body>
+  <div class="main2">
+    <div class="mtop">
+      <div class="tl"><h1>Profile</h1></div>
+      <div class="tr">
+        <a href="home.html">Home</a>
+        <a href="goal.html">Goal</a>
+        <a href="progress.html">Progress</a>
+        <a href="#">Profile</a>
+      </div>
+    </div>
+    <div class="mbottom">
+      <!-- Left -->
+      <div class="bottom_left">
+        <div class="profile">
+          <div class="ltop">
+            <div class="image">
+              <img id="e1" src="assets/user.png" alt="profile"    class="profile-img" />
+            </div>
+            <div class="upload">
+              <button id="e2" class="uploadBtn">Upload Profile</button>
+              <button id="e3" class="removeBtn">Remove</button>
+            </div>
+          </div>
+          <hr class="section-divider">
+          <div class="lbottom">
+            <p id="e4">Name: </p>
+            <p id="e5">Email: </p>
+            <p id="goalsCreated">Goals created: 0</p>
+            <p id="goalsCompleted">Goals completed: 0</p>
+          </div>
+        </div>
+
+        <div class="bio">
+          <p class="section-heading">Bio/About Me</p>
+          <div class="bio_bottom">
+            <textarea placeholder="Driven, focused, and always learning..."></textarea>
+          </div>
+        </div>
+      </div>
+
+      <!-- Middle -->
+      <div class="bottom_middle">
+        <div class="edit_profile">
+          <p class="section-heading">Edit Profile</p>
+          <form class="edit-form">
+            <label>Name</label>
+            <input type="text" id="e11" class="input-box" />
+
+            <label>Email</label>
+            <input type="email" id="e12" class="input-box" />
+
+            <label>Change Password</label>
+            <input type="password" id="e13" class="input-box" />
+
+            <button type="button" id="e14" class="btn">Update</button>
+          </form>
+        </div>
+
+        <div class="security">
+          <p class="section-heading">Security/Preferences</p>
+        <div class="security-bottom">
+            <label>Password Strength:</label>
+            <progress id="passwordStrength" max="100" value="0"></progress>
+            <div class="checkbox-group">
+              <label><input type="checkbox" checked disabled> Email Verified</label><br>
+            </div>
+                <!-- Inside Security/Preferences section -->
+                <p id="lastLogin">Last Login: Not available</p>
+                        <label for="moodSelector">How are you feeling today?</labe>
+                    <select id="moodSelector">
+                        <option value="">-- Select Mood --</option>
+                        <option value="🙂">🙂 Good</option>
+                        <option value="😐">😐 Okay</option>
+                        <option value="😔">😔 Tired</option>
+                        <option value="😎">😎 Confident</option>
+                    </select>
+                <p id="moodDisplay"></p>
+
+        </div>
+        </div>
+      </div>
+
+      <!-- Right -->
+      <div class="bottom_right">
+        <div class="stats">
+          <p class="section-heading">Goal Stats</p>
+          <div class="stats-bottom">
+            <p id="avgTime">Average completion Time : 0 days</p>
+            <p id="compRate">Completion Rate : 0%</p>
+            <p id="streak">Active Streak : 0-day goal streak</p>
+          </div>
+        </div>
+
+        <div class="recent_log">
+          <p class="section-heading">Recent Activity Log</p>
+          <div class="log-bottom" id="logContainer">
+            <p>No recent activity</p>
+          </div>
+        </div>
+
+        <div class="buttons">
+          <button id="e7">Log Out</button>
+          <button id="e8">Delete Account</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="profile.js"></script>
+</body>
+</html>

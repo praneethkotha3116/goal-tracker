@@ -1,0 +1,349 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main2 {
+  height: 100vh;
+  width: 100vw;
+}
+
+.mtop {
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+.tl h1 {
+  font-size: xx-large;
+}
+
+.tr a {
+  text-decoration: none;
+  color: black;
+  font-size: x-large;
+  margin-left: 20px;
+}
+
+.mbottom {
+  height: 90%;
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.bottom_left, .bottom_middle, .bottom_right {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 85%;
+}
+
+/* Profile Box */
+.profile {
+  flex: 1;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+}
+
+.ltop {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+}
+
+.image {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-img {
+  height: 120px;
+  width: 120px;
+  border-radius: 60px;
+}
+
+.upload {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.uploadBtn,
+.removeBtn {
+  width: 80%;
+  padding: 10px;
+  border: none;
+  background-color: #195a78;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.removeBtn {
+  background-color: #d9534f;
+}
+
+.uploadBtn:hover,
+.removeBtn:hover {
+  opacity: 0.9;
+}
+
+.section-divider {
+  width: 90%;
+  margin: 10px auto;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+.lbottom {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 50%;
+}
+
+.info {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* Bio Section */
+.bio {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+  padding: 20px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.section-heading {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.bio_bottom textarea {
+  width: 100%;
+  height: 80px;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  resize: vertical;
+}
+
+/* Edit Profile Section */
+.edit_profile {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.edit-form label {
+  display: block;
+  margin-top: 10px;
+}
+
+.input-box {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+}
+
+.btn {
+  margin-top: 15px;
+  background-color: #222;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.btn:hover {
+  background-color: #000;
+}
+
+/* Security */
+.security {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.security-bottom label {
+  font-size: 14px;
+  display: block;
+  margin-top: 10px;
+}
+
+.security-bottom progress {
+  width: 100%;
+  height: 12px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.checkbox-group {
+  margin-top: 10px;
+}
+
+/* Goal Stats */
+.stats {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.stats-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.stats-line {
+  font-size: 15px;
+}
+
+/* Recent Logs */
+.recent_log {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+  padding: 20px;
+  height: 60%;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.log-bottom {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.log-entry {
+  font-size: 14px;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+#e7, #e8 {
+  width: 45%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#e7 {
+  background-color: #007bff;
+}
+
+#e8 {
+  background-color: #dc3545;
+}
+
+/* Fix Profile Image Size */
+#e1 {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Upload/Remove Buttons Styling */
+.upload button {
+    width: 120px;
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    background-color: #0c4a6e;
+    color: white;
+}
+
+.upload button:nth-child(2) {
+    background-color: #dc2626;
+}
+
+/* Profile Section Resize */
+.profile {
+    height: auto;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Info Labels Styling */
+.lbottom {
+    width: 100%;
+    padding-left: 20px;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+/* Log Out and Delete Buttons Fix */
+.buttons {
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 20px;
+}
+
+#e7, #e8 {
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #1e3a8a;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#e7:hover, #e8:hover {
+    background-color: #000;
+}
+
+
+#moodSelector {
+  margin-top: 5px;
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+#moodDisplay {
+  margin-top: 8px;
+  font-weight: 500;
+}

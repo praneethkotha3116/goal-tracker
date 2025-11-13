@@ -1,0 +1,50 @@
+<!-- ✅ UPDATED progress.html with JS-controlled layout -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>progresspage</title>
+    <link rel="stylesheet" href="progress_style.css">
+</head>
+<body>
+    <div class="main2">
+        <div class="mtop">
+            <div class="tl">
+                <h1>Progress</h1>
+            </div>
+            <div class="tr">
+                <a href="home.html" id="b1">Home</a>
+                <a href="goal.html" id="b1">Goal</a>
+                <a href="progress.html" id="b1">Progress</a>
+                <a href="profile.html" id="b1">Profile</a>
+            </div>
+        </div>
+
+        <div class="mbottom">
+            <!-- Left: Goal Progress -->
+            <div class="bottom_left">
+                <div class="left_top">
+                    <p id="c1">Goal Progress</p>
+                </div>
+                <hr>
+                <div class="left_bottom" id="summary-list">
+                    <!-- JS will insert goal status here -->
+                </div>
+            </div>
+
+            <!-- Right: Goal Completion Upload -->
+            <div class="bottom_right">
+                <div class="right_top">
+                    <p id="c1">Goal Completion</p>
+                </div>
+                <hr>
+                <div class="right_bottom" id="goal-boxes">
+                    <!-- JS will insert goal boxes here -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="progress.js" defer></script>
+</body>
+</html>
