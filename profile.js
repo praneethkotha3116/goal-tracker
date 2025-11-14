@@ -137,7 +137,7 @@ document.addEventListener("DOMContentLoaded", () => {
     localStorage.removeItem("username");
     localStorage.removeItem("email");
     localStorage.removeItem("password");
-    window.location.href = "login.html";
+    window.location.href = "index.html";
   });
 
   // === Delete Account
