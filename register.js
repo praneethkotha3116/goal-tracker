@@ -32,5 +32,5 @@ document.getElementById("registerForm").addEventListener("submit", function (e) 
 
   localStorage.setItem(`userProfile_${email}`, JSON.stringify(profileData));
   alert("Registered successfully!");
-  window.location.href = "login.html";
+  window.location.href = "index.html";
 });
